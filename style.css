@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+/* Utility starts*/
+
+.h1 {
+    font-size: 4vw;
+    font-weight: normal;
+    color: #133d5e;
+}
+
+.h2 {
+    font-size: 33px;
+    font-weight: 500;
+    font-weight: normal;
+    color: rgb(210, 209, 209);
+}
+
+.btn {
+    background: #6290b3;
+    border: none;
+    outline: none;
+    padding: 9px 35px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+.flex {
+    display: flex;
+}
+
+.padd {
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+
+/* Utility ends */
+
+header {
+    position: relative;
+    background-image: url(https://onclickwebdesign.com/wp-content/uploads/2019/02/E8A0GT.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vw;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    background-color: #0C3C60;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.navbar {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.logo span {
+    color: #7DCAC3;
+}
+
+.navLinks ul {
+    gap: 25px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.navLinks ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    border: 1px solid #7DCAC3;
+    color: #7DCAC3;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 3px;
+    display: none;
+}
+
+.menuLinks {
+    position: absolute;
+    width: 100%;
+    background-color: #0C3C60;
+    text-align: center;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    transition: height 1.2s;
+    z-index: 99;
+}
+
+.menuLinks ul li {
+    padding: 18px 0;
+    border-top: 1px solid #7DCAC3;
+}
+
+.menuLinks ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.menuLinks.open {
+    height: 90%;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    ;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.heading p {
+    font-size: 20px;
+    color: #133d5e;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 950px) {
+    header {
+        height: 60vw;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navLinks ul li a {
+        font-size: 14px;
+    }
+
+    .heading {
+        padding: 20px;
+    }
+
+    .heading p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        height: 85vw;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .navLinks {
+        display: none;
+        top: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menuLinks {
+        display: block;
+    }
+
+    .heading {
+        padding: 8px;
+    }
+
+    .heading p {
+        font-size: 13px;
+        padding-bottom: 4px;
+    }
+}
+
+
+/* cards here */
+.cards {
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    max-width: 350px;
+    background-color: #0C3C60;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        font-size: 16px;
+        color: white;
+        line-height: 25px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1050px) {
+    .cards {
+        gap: 25px;
+    }
+
+    .card {
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cards {
+        gap: 15px;
+    }
+
+    .card {
+        padding: 30px 25px;
+    }
+
+    .card p {
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 50px 40px;
+    }
+
+    .card p {
+        line-height: 25px;
+    }
+}
+
+
+/* About us */
+#aboutUs {
+    background-color: #D1E0EB;
+}
+
+.about {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about h1 {
+    margin-bottom: 50px;
+}
+
+.about p {
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #133d5e;
+}
+
+.about button {
+    background-color: #0C3C60;
+    margin-top: 45px;
+}
+
+/* Contact us starts */
+#contact {
+    background-color: #133d5e;
+}
+
+#contact h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contactDetails {
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.contactMap{
+    width: 33%;
+    min-width: 350px;
+    max-width: 400px;
+}
+.contactMap img{
+    width: 100%;
+}
+
+.contactForm {
+    min-width: 30%;
+}
+
+.contactForm p {
+    text-align: center;
+    color: white;
+}
+
+.form {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+}
+.form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    resize: none;
+    font-family: cursive;
+}
+.form button{
+    align-self: end;
+}
+
+@media (max-width: 900px) {
+    .contactDetails{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+    }
+    .contactMap{
+        width: 100%;
+        min-width: auto;
+    }
+    .contactForm {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .contactForm {
+        min-width: 100%;
+    }
+}
+
+/* Footer */
+.footer{
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.creater{
+    color: white;
+    font-size: 14px;
+}
+.icons{
+    gap: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+/* Contact us ends */
+
+/* Global */
+@media (max-width: 950px) {
+    .h1 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .h1 {
+        font-size: 30px;
+    }
+}
